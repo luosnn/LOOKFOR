@@ -17,7 +17,7 @@ import cn.bmob.v3.Bmob;
 public class Welcome extends Activity {
     Handler handler = new Handler();
     final int TIME = 1000;
-    final int NUM = 2;
+    final int NUM = 4;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

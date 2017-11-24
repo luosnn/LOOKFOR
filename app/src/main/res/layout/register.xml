@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#d81e06"
+    android:background="#528B8B"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
+        android:layout_marginTop="60dp"
         android:id="@+id/register_pic"
         android:src="@drawable/app_pic"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_centerHorizontal="true"/>
     <EditText
         android:hint="ID账号"
@@ -23,7 +24,7 @@
         android:layout_marginTop="20dp"/>
     <EditText
         android:id="@+id/register_email"
-        android:hint="邮箱"
+        android:hint="ID邮箱"
         android:textColorHint="#ffffff"
         android:layout_below="@id/register_user"
         android:gravity="center_horizontal"

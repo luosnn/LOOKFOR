@@ -86,7 +86,9 @@ public class Register extends Activity implements View.OnClickListener {
                 }
                 break;
             case R.id.help:
-                final AlertDialog.Builder dialog = new AlertDialog.Builder(Register.this).setMessage("设置邮箱方便忘记密码时找回，财大开发者不会对您进行骚扰");
+                final AlertDialog.Builder dialog = new AlertDialog.Builder(Register.this).setMessage("设置邮箱方便忘记密码时找回，财大开发者不会对您进行骚扰。")
+                        ;
+                dialog.show();
                 break;
 
         }
