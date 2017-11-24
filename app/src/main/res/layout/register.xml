@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#d81e06"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/register_pic"
+        android:src="@drawable/app_pic"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:hint="ID账号"
+        android:textColorHint="#ffffff"
+        android:id="@+id/register_user"
+        android:gravity="center_horizontal"
+        android:lines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_pic"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/register_email"
+        android:hint="邮箱"
+        android:textColorHint="#ffffff"
+        android:layout_below="@id/register_user"
+        android:gravity="center_horizontal"
+        android:lines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/register_pass"
+        android:hint="ID密码"
+        android:gravity="center_horizontal"
+        android:textColorHint="#ffffff"
+        android:layout_width="match_parent"
+        android:lines="1"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_email"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/register"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/login_tologin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/register_pass"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:layout_below="@id/register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <ProgressBar
+        android:id="@+id/register_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/to_login"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/register_user"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/help" />
+
+</RelativeLayout>
